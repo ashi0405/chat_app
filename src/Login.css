@@ -1,0 +1,16 @@
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.login>div>img{
+    object-fit: contain;
+    height: 150px;
+}
+
+.login>button{
+    width: 300px;
+    background-color: #3ea4fb;
+    font-weight: 800;
+}
