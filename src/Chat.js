@@ -38,15 +38,17 @@ function Chat() {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    db.collection("chats").doc(chatId).collection("messages").add({
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      message: input,
-      uid: user.uid,
-      photo: user.photo,
-      email: user.email,
-      dispayName: user.displayName,
-    });
-    setInput("");
+    if (input) {
+      db.collection("chats").doc(chatId).collection("messages").add({
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        message: input,
+        uid: user.uid,
+        photo: user.photo,
+        email: user.email,
+        dispayName: user.displayName,
+      });
+      setInput("");
+    }
   };
   return (
     <div className="chat">

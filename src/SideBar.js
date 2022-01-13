@@ -10,7 +10,8 @@ import db, { auth } from "./firebase";
 
 function SideBar() {
   const user = useSelector(selectUser);
-  const [chats, setChats] = useState([]);
+  const [chats, setChats] = useState([]); // hook -> re-rendet component whenever value of the variable changes
+
   useEffect(() => {
     db.collection("chats").onSnapshot((snapshot) =>
       setChats(

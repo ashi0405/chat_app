@@ -7,10 +7,11 @@ import Login from "./Login.js";
 import { auth } from "./firebase";
 
 function App() {
-  const user = useSelector(selectUser);
-  const dispatch = useDispatch();
+  const user = useSelector(selectUser); // to get the data from provider store
+  const dispatch = useDispatch(); // to make change in the provider store
 
   useEffect(() => {
+    // react hook
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         dispatch(
