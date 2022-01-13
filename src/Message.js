@@ -1,13 +1,15 @@
 import React from "react";
-import SideBar from './SideBar'
+import SideBar from "./SideBar";
 import Chat from "./Chat";
-import "./Message.css"
+import "./Message.css";
 
 function Message() {
-  return(<div className="message">
-    <SideBar/>
-    <Chat/>
-  </div>);
+  return (
+    <div className="message">
+      <SideBar />
+      <Chat />
+    </div>
+  );
 }
 
 export default Message;

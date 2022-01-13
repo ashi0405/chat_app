@@ -30,23 +30,23 @@
   border-radius: 5px;
 }
 
-.sidebar_input>input {
+.sidebar_input > input {
   border: none;
   background: transparent;
   outline-width: 0;
 }
 
-.sidebar_chats{
+.sidebar_chats {
   overflow: scroll;
 }
 
 /* Hide scrollbar for chrome,safari,operaa */
-.sidebar_chats::-webkit-scrollbar{
+.sidebar_chats::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE,Edge,Firefox */
-.sidebar_chats{
+.sidebar_chats {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
